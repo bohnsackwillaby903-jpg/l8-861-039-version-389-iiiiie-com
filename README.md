@@ -1,16 +1,11 @@
-﻿# website-upload-861-039
+# 高清国产追剧
 
-Batch 39 of 46. Contains extracted static website versions. The original zip files are not committed.
+这是根据上传素材生成的纯静态电影网站。
 
-| Directory | Source zip |
-| --- | --- |
-| version-381 | project-bolt-sb1-6rbteehn - 副本-chatgpt (2).zip |
-| version-382 | project-bolt-sb1-6rbteehn-chatgpt (1).zip |
-| version-383 | project-bolt-sb1-6rbteehn-chatgpt (1)_moved_20260608154019_0002.zip |
-| version-384 | project-bolt-sb1-6rbteehn-chatgpt (1)_moved_20260608154019_0003.zip |
-| version-385 | project-bolt-sb1-6rbteehn-chatgpt (2).zip |
-| version-386 | project-bolt-sb1-6sg9sycs - 副本-chatgpt (1)_moved_20260608154019_0002.zip |
-| version-387 | project-bolt-sb1-6t6esgj3 - 副本-chatgpt (1)_moved_20260608154019_0003.zip |
-| version-388 | project-bolt-sb1-6tjsdbx7-chatgpt (1).zip |
-| version-389 | project-bolt-sb1-6tjsdbx7-chatgpt (2).zip |
-| version-390 | project-bolt-sb1-6tmrltnu-chatgpt (1)_moved_20260608154019_0001.zip |
+- 解析影片数量：2000
+- 独立详情页数量：2000
+- 独立分类页数量：12
+- 播放器：HLS 初始化逻辑 + 原上传播放模块 + 本地备用 HLS 片段
+- 封面引用规则：第 N 条影片引用顶级目录 `X.jpg`，其中 `X = ((N - 1) % 150) + 1`
+
+如需使用真实封面，请把 `1.jpg` 到 `150.jpg` 放在网站根目录，与 `index.html` 同级。
